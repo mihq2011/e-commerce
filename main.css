@@ -92,7 +92,6 @@ body {
 }
 
 .featured-wrapper {
-   
     width: 100%;
 }
 
@@ -104,6 +103,7 @@ body {
 .featured-wrapper .featured-products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 100px 0;
 }
 
 .featured-wrapper .featured-products .featured-item img {
@@ -112,7 +112,29 @@ body {
 }
 
 .featured-wrapper .featured-products .featured-item p {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     padding: 15px 0
+}
+
+footer {
+    background: #D3BBFA;
+}
+
+footer .footer-wrapper {
+    padding: 100px 0;
+}
+
+footer .footer-wrapper .footer-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .footer-wrapper .footer-bottom p {
+    padding: 50px 0;
+}
+
+footer .footer-wrapper .footer-bottom ul {
+    display: inline-block;
+    list-style: none;
 }
