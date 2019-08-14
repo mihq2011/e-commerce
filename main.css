@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-    max-width: 1150px;
-margin: 0 auto;
-overflow: hidden;
+    max-width: 1045px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .header-wrapper {
@@ -89,4 +89,30 @@ overflow: hidden;
 
  .carousel-control-next,  .carousel-control-prev {
     display: none;
+}
+
+.featured-wrapper {
+   
+    width: 100%;
+}
+
+.featured-wrapper h1 {
+    color: #D3BBFA;
+    text-align: left;
+}
+
+.featured-wrapper .featured-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.featured-wrapper .featured-products .featured-item img {
+    height: 450px;
+    
+}
+
+.featured-wrapper .featured-products .featured-item p {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 0
 }
