@@ -123,6 +123,7 @@ footer {
 
 footer .footer-wrapper {
     padding: 100px 0;
+    font-size: 15px;
 }
 
 footer .footer-wrapper .footer-item {
@@ -130,11 +131,49 @@ footer .footer-wrapper .footer-item {
     grid-template-columns: repeat(3, 1fr);
 }
 
+footer .footer-wrapper .footer-item h4 {
+    font-weight: 700;
+}
+
+footer .footer-wrapper .footer-item .social-media i {
+    color: white;
+    font-size: 25px;
+}
+
+footer .footer-wrapper .footer-item .links a {
+    display: block;
+    text-decoration: none;
+    color: #27202C;
+}
+
+
 footer .footer-wrapper .footer-bottom p {
     padding: 50px 0;
 }
 
+
 footer .footer-wrapper .footer-bottom ul {
     display: inline-block;
     list-style: none;
+}
+
+footer .footer-wrapper .footer-item .contact {
+   text-align: left;
+}
+
+
+footer .footer-wrapper .footer-item .contact input {
+    display: inline-block;
+}
+
+footer .footer-wrapper .footer-item .contact .btn {
+    display: inline;
+}
+
+footer .footer-wrapper .footer-item .contact .btn button {
+    background: #27202C;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: block;
 }
