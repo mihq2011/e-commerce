@@ -87,6 +87,12 @@ body {
     height: 400px;
  }
 
+ .slider-wrapper .slider .carousel img{
+    height: 100%;
+    width: 100%;
+
+ }
+
  .carousel-control-next,  .carousel-control-prev {
     display: none;
 }
