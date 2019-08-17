@@ -1,5 +1,5 @@
 body {
-    font-family: 'Marck Script', cursive;
+    font-family: 'Acme', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,9 +23,13 @@ body {
 .header-wrapper .header {
     padding: 15px;
     position: relative;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     
+}
+
+.header-wrapper .header .mobile-nav {
+    display: none;
 }
 
 .header-wrapper .header a {
@@ -54,18 +58,18 @@ body {
 }
 
 .header-wrapper .header img {
-    padding: 75px;
+    padding: 50px;
 }
 
 .header-wrapper .header nav {
-    padding: 20px;
+    padding: 30px;
 }
 
 .header-wrapper .header nav a {
     padding: 0 25px;
     color: #D3BBFA;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 18px;
     transition: .5s;
 }
 
@@ -73,29 +77,51 @@ body {
     color: #27202C!important;
 }
 
-
-.slider-wrapper {
-   
-}
-
-.slider-wrapper .slider {
-   padding: 75px 0;
-}
-
-.slider-wrapper .slider .container{
-    width: 800px;
-    height: 400px;
- }
-
- .slider-wrapper .slider .carousel img{
-    height: 100%;
-    width: 100%;
-
- }
-
- .carousel-control-next,  .carousel-control-prev {
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
     display: none;
-}
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.5s;
+    animation-name: fade;
+    animation-duration: 3.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+  }
+
 
 .featured-wrapper {
     width: 100%;
@@ -136,6 +162,7 @@ footer {
 footer .footer-wrapper {
     padding: 20px 0;
     font-size: 15px;
+    text-align: left;
 }
 
 footer .footer-wrapper .footer-item {
@@ -162,6 +189,9 @@ footer .footer-wrapper .footer-item .links a {
     color: #27202C;
 }
 
+footer .footer-wrapper .footer-bottom {
+    text-align: center;
+}
 
 footer .footer-wrapper .footer-bottom p {
     padding: 20px 0;
@@ -178,6 +208,7 @@ footer .footer-wrapper .footer-item .contact input {
 
 footer .footer-wrapper .footer-item .contact .btn {
     display: inline;
+    margin: 20px;
 }
 
 footer .footer-wrapper .footer-item .contact .btn button {
@@ -203,4 +234,99 @@ footer .footer-wrapper .footer-bottom ul li {
 footer .footer-wrapper .footer-bottom ul li img {
     width: 35px;
     height: 20px;
+}
+
+ /* Tablets */
+ @media screen and (max-width: 768px) {
+    footer .footer-wrapper {
+        text-align: center;
+    }
+
+    .featured-wrapper .featured-products {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Phones */
+@media screen and (max-width: 414px) {
+    .header-wrapper {
+        height: 115px;
+    }
+
+    .header-wrapper .header-left {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .header-wrapper .header-right {
+        display: none;
+        
+    }
+
+    .header-wrapper .header .mobile-nav {
+        display: block;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .header-wrapper .header .mobile-nav  .nav-btn {
+        float: left;
+        
+        
+    }
+
+    .header-wrapper .header .mobile-nav  .cart-btn {
+        float: right;
+        
+    }
+
+    .featured-wrapper .featured-products {
+        grid-template-columns: 1fr;
+    }
+
+    .header-wrapper .header nav {
+        display: none;
+    }
+
+    .header-wrapper .header ul {
+        list-style: none;
+        text-align: left;
+        padding: 20px 0;
+    }
+
+    .header-wrapper .header ul li {
+        border-top:solid 1px #27202C;
+    }
+
+    .header-wrapper .header img {
+        width: 100%;
+        padding: 50px 0 0;
+    }
+
+    .slideshow-container {
+        padding: 10px;
+    }
+
+    footer .footer-wrapper .footer-item {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-wrapper .footer-item .contact {
+        text-align: center;
+    }
+
+    footer .footer-wrapper .footer-item .contact input {
+        display: inline-block;
+    }
+
+    footer .footer-wrapper .footer-item .contact .btn {
+        display: inline-block;
+        margin: 0;
+    }
+
+    footer .footer-wrapper .footer-item h4 {
+        padding-top: 25px;
+    }
 }
