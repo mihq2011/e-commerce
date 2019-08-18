@@ -1,3 +1,13 @@
+/*Mobile Menu */
+var menuBtn = document.getElementsByClassName('nav-btn')
+var mobileMenu = document.getElementsByClassName('mobile-menu')
+var clickedBtn = function() {
+    mobileMenu[0].classList.toggle('active')
+}
+
+menuBtn[0].addEventListener('click', clickedBtn);
+
+
 var slideIndex = 0;
 showSlides();
 
@@ -12,3 +22,4 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block"; 
   setTimeout(showSlides, 4000);
 }
+
