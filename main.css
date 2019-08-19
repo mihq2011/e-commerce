@@ -188,6 +188,7 @@ footer .footer-wrapper .footer-item .links a {
     display: block;
     text-decoration: none;
     color: #27202C;
+    padding: 10px 0;
 }
 
 footer .footer-wrapper .footer-bottom {
