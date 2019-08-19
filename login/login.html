@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="/css/clothing.css">
+    <link rel="stylesheet" href="/css/login.css">
 
     <title>E-commerce site</title>
   </head>
@@ -18,99 +18,72 @@
 
         <!--Header-->
         <div class="header">
-          <div class="header-left">
-                  <div>Free shipping on orders over $65</div>
-          </div>
-          <div class="mobile-nav">
-            <div class="nav-btn">
-              <i class="fas fa-bars"></i> Menu
+            <div class="header-left">
+                 <div>Free shipping on orders over $65</div>
             </div>
-            <div class="cart-btn">
-              <i class="fas fa-shopping-cart"></i> Cart
+            <div class="mobile-nav">
+              <div class="nav-btn">
+                <i class="fas fa-bars"></i> Menu
+              </div>
+              <div class="cart-btn">
+                <i class="fas fa-shopping-cart"></i> Cart
+              </div>
+              <div class="mobile-menu">
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/heels/heels-page.html">Heels</a></li>
+                  <li><a href="/sandals/sandals-page.html">Sandals</a></li>
+                  <li><a href="/clothing/clothing-page.html">Clothing</a></li>
+                  <li><a href="#">Log in</a></li>
+                  <li><a href="">  Create account</a></li>
+                  <li style="padding: 10px 0 0 10px;"><input type="search" placeholder="Search"></li>
+                </ul>
+              </div>
             </div>
-            <div class="mobile-menu">
-              <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/heels/heels-page.html">Heels</a></li>
-                <li><a href="/sandals/sandals-page.html">Sandals</a></li>
-                <li><a href="#">Clothing</a></li>
-                <li><a href="/login/login.html">Log in</a></li>
-                <li><a href="/login/login.html#create-account">  Create account</a></li>
-                <li style="padding: 10px 0 0 10px;"><input type="search" placeholder="Search"></li>
-              </ul>
+            <div class="header-right">
+                <a href="#">Log in</a><span style="padding-right:8px;">or</span>
+                <a href="#"> Create acount</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <input type="search" placeholder="Search">
             </div>
-          </div>
-          <div class="header-right">
-              <a href="/login/login.html">Log in</a> or 
-              <a href="/login/login.html#create-account"> Create acount</a>
-              <a href="/cart/cart-page.html"><i class="fas fa-shopping-cart"></i> Cart</a>
-              <input type="search" placeholder="Search">
-          </div>
-          <div class="header-bg">
-              <img src="https://cdn.shopify.com/s/files/1/0045/7795/1793/files/IMG_7347_f3df1e75-91cb-4c4d-a3d6-d7ffa5d92bf9_540x.jpg?v=1565217006" alt="">
-          </div>
-          <nav>
-              <a href="#">Home</a>
+            <div class="header-bg">
+                <img src="https://cdn.shopify.com/s/files/1/0045/7795/1793/files/IMG_7347_f3df1e75-91cb-4c4d-a3d6-d7ffa5d92bf9_540x.jpg?v=1565217006" alt="">
+            </div>
+            <nav>
+              <a href="/index.html">Home</a>
               <a href="/heels/heels-page.html">Heels</a>
               <a href="/sandals/sandals-page.html">Sandals</a>
-              <a href="/clothing/clothing-page.html" style="color: rgb(187, 145, 255);">Clothing</a>
+              <a href="/clothing/clothing-page.html">Clothing</a>
               <a href="/policy.html">Our policy</a>
           </nav>
-      </div>
-
-
-        <div class="clothing-wrapper">
-          <h1>Shop Clothing</h1>
-          <div class="featured-products">
-            <div class="featured-item">
-              <img src="https://www.pinkqueen.com/upload/thumb/360x540/goodsimport/2018-07/PCD2571GR_1.jpg" alt="">
-              <h4>Spaghetti Strap Button Down Midi Sundress</h4>
-              <p>$20.99</p>
-            </div>
-            <div class="featured-item">
-                <img src="https://cdn-img.prettylittlething.com/b/a/3/8/ba3854eda8c8ea0601d5d51633f779bba9892d0c_CLW4540_4.JPG?imwidth=400" alt="">
-                <h4>Turquoise Floral Printed Frill Wrap Tea Dress</h4>
-                <p>$20.99</p>
-              </div>
-              <div class="featured-item">
-                  <img src="https://static.ikrush.com/uploads/images/products/large/ikrush-rosie-floral-frill-hem-dress-1560517550DSC-6615.jpg" alt="">
-                  <h4>White Floral Frill Sleeve Shift Dress</h4>
-                  <p>$20.99</p>
-                </div>
-                <div class="featured-item">
-                  <img src="https://www.lulus.com/images/product/xlarge/1927272_324262.jpg" alt="">
-                  <h4>Pink Floral Print Dress - Ruffle Dress</h4>
-                  <p>$20.99</p>
-                </div>
-                <div class="featured-item">
-                  <img src="https://i1.adis.ws/i/boohooamplience/fzz98445_ivory_xl?$product_image_category_page_horizontal_filters_desktop$" alt="">
-                  <h4>Off The Shoulder Lemon Print Mini Dress</h4>
-                  <p>$20.99</p>
-                </div>
-                <div class="featured-item">
-                    <img src="https://i.pinimg.com/originals/5f/fb/b5/5ffbb5d598aaec6d49348a537679aae4.jpg" alt="">
-                    <h4>Beige Natural Slide Sandals</h4>
-                    <p>$20.99</p>
-                  </div>
-                  <div class="featured-item">
-                    <img src="https://cdn.tobi.com/product_images/lg/1/white-becca-off-shoulder-day-dress.jpg" alt="">
-                    <h4>Becca Off Shoulder Day Dress</h4>
-                    <p>$20.99</p>
-                  </div>
-          </div> 
         </div>
 
+        <div class="login-wrapper">
+            <h1>Login</h1>
+            <div class="login">
+            <div class="email"><input type="email" name="email" placeholder=" Email"></div>
+            <div class="password"><input type="email" name="email" placeholder=" Password"></div>
+            <p><a href="">Forgot your Password?</a></p>
+            <a href=""><button>Sign In</button></a>
+            <p><a href="">Create account</a></p>
+            <p><a href="">Return to Store</a></p>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-        <!--End of container-->
+        <div class="or"> <h1>or</h1></div>
+        
+        <div class="create-wrapper" id="create-account">
+            <h1>Create Account</h1>
+            <div class="create">
+                <div class="name"><input type="name" placeholder=" First Name"></div>
+                <div class="last-name"><input type="name" placeholder=" Last Name"></div>
+                <div class="email"><input type="email" name="email" placeholder=" Email"></div>
+                <div class="password"><input type="email" name="email" placeholder=" Password"></div>
+                <a href=""><button>Create</button></a>
+                <p><a href="">Return to Store</a></p>
+            </div>
+            </div>
+        </div>
 </div>
 
 <!--Footer-->

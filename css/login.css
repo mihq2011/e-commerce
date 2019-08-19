@@ -1,0 +1,112 @@
+.login-wrapper {
+    padding: 50px 20px 0;
+    text-align: left;
+    
+}
+
+.login-wrapper h1{
+    color: #D3BBFA;  
+    
+}
+
+.login-wrapper .login {
+    padding: 20px;
+    width: 80%;
+}
+
+.login-wrapper .login .email {
+    padding: 0 0 20px 0;
+}
+
+.login-wrapper .login input {
+    width: 400px;
+    height: 30px;
+}
+
+.login-wrapper .login a {
+    text-decoration: none;
+    line-height: 45px;
+}
+
+.login-wrapper .login a:hover {
+    color: rgb(187, 145, 255);
+}
+
+.login-wrapper .login button {
+   background-color: black;
+   border: none;
+   color: white;
+   padding: 14px;
+   width: 100px;
+   font-weight: 800;
+   cursor: pointer;
+}
+
+.or {
+    font-size: 30px;
+    color: #D3BBFA;
+    text-align: left;
+    padding: 50px 20px;  
+    text-decoration: underline;
+}
+
+.create-wrapper {
+    padding: 50px 20px 0;
+    text-align: left;
+    
+}
+
+.create-wrapper h1{
+    color: #D3BBFA;  
+}
+
+.create-wrapper .create { 
+    padding: 0 20px;
+}
+
+.create-wrapper  {
+    padding: 20px;
+    width: 80%;
+}
+
+.create-wrapper  div {
+    padding: 10px 0;
+}
+
+.create-wrapper  input {
+    width: 400px;
+    height: 30px;
+}
+
+.create-wrapper  a {
+    text-decoration: none;
+    line-height: 45px;
+}
+
+.create-wrapper  a:hover {
+    color: rgb(187, 145, 255);
+}
+
+.create-wrapper button {
+   background-color: black;
+   border: none;
+   color: white;
+   padding: 14px;
+   width: 100px;
+   font-weight: 800;
+   cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .login-wrapper .login input {
+        width: 100%;
+    }
+
+    .or {
+        padding: 40px 20px;
+    }
+}
+
